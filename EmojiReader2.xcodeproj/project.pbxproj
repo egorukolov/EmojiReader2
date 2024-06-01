@@ -13,6 +13,9 @@
 		56491CD92C08547E00E259A2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 56491CD82C08547E00E259A2 /* Base */; };
 		56491CDB2C08548000E259A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56491CDA2C08548000E259A2 /* Assets.xcassets */; };
 		56491CDE2C08548000E259A2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 56491CDD2C08548000E259A2 /* Base */; };
+		56491CEA2C085A6C00E259A2 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56491CE92C085A6C00E259A2 /* EmojiTableViewController.swift */; };
+		56491CEC2C086E5D00E259A2 /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56491CEB2C086E5D00E259A2 /* EmojiTableViewCell.swift */; };
+		565D043A2C0ACC51007A6FE5 /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D04392C0ACC51007A6FE5 /* EmojiModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		56491CDA2C08548000E259A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56491CDD2C08548000E259A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56491CDF2C08548000E259A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56491CE92C085A6C00E259A2 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
+		56491CEB2C086E5D00E259A2 /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
+		565D04392C0ACC51007A6FE5 /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		56491CD02C08547E00E259A2 /* EmojiReader2 */ = {
 			isa = PBXGroup;
 			children = (
-				56491CD12C08547E00E259A2 /* AppDelegate.swift */,
-				56491CD32C08547E00E259A2 /* SceneDelegate.swift */,
-				56491CD52C08547E00E259A2 /* ViewController.swift */,
-				56491CD72C08547E00E259A2 /* Main.storyboard */,
-				56491CDA2C08548000E259A2 /* Assets.xcassets */,
-				56491CDC2C08548000E259A2 /* LaunchScreen.storyboard */,
-				56491CDF2C08548000E259A2 /* Info.plist */,
+				56491CE52C0856D100E259A2 /* ViewControllers */,
+				565D043B2C0ACC64007A6FE5 /* Models */,
+				56491CE62C0856EF00E259A2 /* Storyboards */,
+				56491CE72C08575900E259A2 /* SupportingFiles */,
+				56491CE82C08577200E259A2 /* Sources */,
 			);
 			path = EmojiReader2;
+			sourceTree = "<group>";
+		};
+		56491CE52C0856D100E259A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				56491CD52C08547E00E259A2 /* ViewController.swift */,
+				56491CE92C085A6C00E259A2 /* EmojiTableViewController.swift */,
+				56491CEB2C086E5D00E259A2 /* EmojiTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		56491CE62C0856EF00E259A2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				56491CD72C08547E00E259A2 /* Main.storyboard */,
+				56491CDC2C08548000E259A2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		56491CE72C08575900E259A2 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				56491CD32C08547E00E259A2 /* SceneDelegate.swift */,
+				56491CD12C08547E00E259A2 /* AppDelegate.swift */,
+				56491CDF2C08548000E259A2 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		56491CE82C08577200E259A2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				56491CDA2C08548000E259A2 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		565D043B2C0ACC64007A6FE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				565D04392C0ACC51007A6FE5 /* EmojiModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56491CEA2C085A6C00E259A2 /* EmojiTableViewController.swift in Sources */,
 				56491CD62C08547E00E259A2 /* ViewController.swift in Sources */,
+				565D043A2C0ACC51007A6FE5 /* EmojiModel.swift in Sources */,
+				56491CEC2C086E5D00E259A2 /* EmojiTableViewCell.swift in Sources */,
 				56491CD22C08547E00E259A2 /* AppDelegate.swift in Sources */,
 				56491CD42C08547E00E259A2 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,12 +346,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48X7U22M49;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EmojiReader2/Info.plist;
+				INFOPLIST_FILE = EmojiReader2/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +360,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.egorukolov.EmojiReader2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +379,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48X7U22M49;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EmojiReader2/Info.plist;
+				INFOPLIST_FILE = EmojiReader2/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +393,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.egorukolov.EmojiReader2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
