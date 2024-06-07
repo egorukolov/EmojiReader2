@@ -19,14 +19,20 @@ class EmojiTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+
         
         self.title = "Emoji Reader"
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+    }
+    
+    @IBAction func unwindSegue(segue: UIStoryboardSegue){
+        guard segue.identifier == "saveSegue" else { return }
+        let sourceVC = segue.source as! NewEmojiTableViewController
+        let emoji = sourceVC.emoji
+        
+        let newIndexPath = IndexPath(row: objects.count, section: 0)
+        objects.append(emoji)
+        tableView.insertRows(at: [newIndexPath], with: .fade)
     }
     
     // MARK: - Table view data source
